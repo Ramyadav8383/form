@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #4267B2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+      color: rgb(71, 68, 68);
+      margin: auto;
+      margin-top: 30px;
+      /* padding: 10px 16px; */
+      border-radius: 10px;
+      width: 330px;
+      height: 500px;
+      background-color: white;
+    }
+
+    form {
+      margin: 20px 30px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      padding: 20px;
+    }
+
+    p {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+
+    input {
+      padding: 2px;
+      width: 260px;
+      height: 30px;
+      text-align: left;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+
+    button {
+      margin-top: 16px;
+      /* padding: 8px 103px; */
+      width: 260px;
+      height: 30px;
+      background-color: lightgreen;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: rgb(52, 158, 52);
+    }
+
+    .para_term {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4267B2;
+    }
+    .footer {
+      color: white;
+    }
+    .footer a {
+      color: greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="final.php" class="form">
+      <h3>Sign Up</h3>
+      <p>it's free and only take a minutes</p>
+      <label for="first-name">First Name</label><br>
+      <input type="text" name="first-name" id="first-name"><br>
+      <label for="last-name">Last Name</label><br>
+      <input type="text" name="last-name" id="last-name">
+      <br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email"> <br>
+      <label for="Password">Password</label><br>
+      <input type="password" name="Password" id="Password"> <br>
+      <label for="confirm-password">Confirm Password</label><br>
+      <input type="password" name="confirm-password" id="confirm-password">
+      <br>
+      <button>Sign Up</button>
+      <p class="para_term">By Clicking trhe Sign Up Button, yuou agree to <a href="#">terms and condition</a> and <a href="#">privacy policy</a></p>
+
+    </form>
+  </div>
+  <footer class="footer">
+  <p>Already have a Account?<a href="#">Login here</a> </p>
+  </footer>
+
+</body>
+
+</html>
